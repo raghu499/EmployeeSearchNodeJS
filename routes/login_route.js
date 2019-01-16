@@ -4,6 +4,6 @@ var logger = require('../util/logger');
 const joi=require('express-joi-validator');
 const service = require('../services/login_service');
 
-router.get('/loginEmployee/:username/:password',service.getLogincheck);
+router.post('/loginEmployee',service.getLogincheck);
 
 module.exports = router;

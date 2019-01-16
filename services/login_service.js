@@ -12,8 +12,8 @@ var getLogincheck = async(req,res,next)=>{
     
     let loginData = await loginModel.LoginEmp.findOne({
     where:{
-    username:req.params.username,
-    password: req.params.password
+    username:req.body.username,
+    password: req.body.password
     }
     
     });
